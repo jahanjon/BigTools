@@ -1,5 +1,6 @@
 ﻿using Domain.Entity.Base;
 using Domain.Entity.Product;
+using Domain.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,7 +14,8 @@ namespace Domain.Entity.Shopping
         public int ShoppingCartId { get; set; } 
         public ShoppingCart ShoppingCart { get; set; }
         public int GoodId { get; set; }
-        public Good Good { get; set; } 
-        public int Quantity { get; set; } 
+        public Good Good { get; set; }
+        public int Quantity { get; set; }
+        public PaymentMethod PaymentMethod { get; set; }
     }
 }

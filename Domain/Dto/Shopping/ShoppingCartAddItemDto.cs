@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Domain.Enums;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,5 +12,6 @@ namespace Domain.Dto.Shopping
         public int CartId { get; set; }
         public int GoodId { get; set; }
         public int Quantity { get; set; }
+        public PaymentMethod PaymentMethod { get; set; }
     }
 }
